@@ -1,0 +1,473 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Wet+Paint&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* --------------Login container popup------------------- */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* body, html {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+} */
+.login-button {
+    background-color: #f5f7f9;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ---------Popup styling-------- */
+.popup {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 400px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    overflow: auto;
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+
+.popup-content {
+    padding: 20px;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.login-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+.login-input input{
+    background-color: transparent;
+    border: none;
+    width: 200%;
+    padding: 10px;
+}
+.login-input input::placeholder{
+    color:black;
+    font-weight: 30px;
+    font-size: larger;
+}
+
+.flag-icon {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.submit-button {
+    background-color: #f5f7f9;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.help-text {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.continue-email {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+
+/* Show popup */
+.popup.show {
+    right: 0;
+}
+
+
+/* ------------REGISTE-------------------- */
+.Register {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 400px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    overflow: auto;
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+
+.Register-content {
+    padding: 20px;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.Register-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+.Register-input input{
+    background-color: transparent;
+    border: none;
+    width: 200%;
+    padding: 10px;
+}
+.Register-input input::placeholder{
+    color:black;
+    font-weight: 30px;
+    font-size: larger;
+}
+
+.Register-submit {
+    background-color: #f5f7f9;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Show popup */
+.Register.show {
+    right: 0;
+}
+
+
+
+/*---------------------Header portion------------------------- */
+        .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #212A31;
+    border-bottom: 1px solid #ccc;
+    font-family:"Rubik Wet Paint", system-ui;
+
+}
+
+
+
+.logo img {
+    height: 60px;
+    margin-right: 8px;
+    width: 60px;
+    border-radius: 50px;
+
+}
+
+.logo span {
+    font-size: 24px;
+    color: #748D92;
+    font-weight: 600;
+    text-shadow: #124E66;
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.auth-buttons .login-btn,
+.auth-buttons .join-btn {
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.auth-buttons .join-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+}
+
+.auth-buttons .login-btn:hover,
+.auth-buttons .join-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.auth-buttons .join-btn:hover {
+    background-color: #444;
+}
+/* ---------------------Main content section----------------------- */
+.main-section {
+text-align: center;
+padding: 10px;
+background-color: #D3D9D4;
+height: fit-content;
+}
+
+.main-heading h1 {
+font-size: 76px;
+color: #333;
+margin-bottom: 20px;
+font-family: "Dancing Script", cursive;
+
+}
+
+.search-bar input {
+padding: 10px;
+font-size: 18px;
+width: 50%;
+border: 1px solid #ccc;
+border-radius: 4px;
+margin-bottom: 40px;
+}
+
+.art-forms {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 20px;
+padding: 0 20px;
+}
+
+.art-category1 {
+border-radius: 8px;
+padding: 40px 40px 40px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+text-align: left;
+background-color: #124E66;
+}
+
+.art-category1 h2 {
+font-size: 24px;
+color: #1A73E8;
+margin-bottom: 10px;
+}
+
+.art-category1 p {
+font-size: 16px;
+color: #666;
+}
+.art-category2 {
+border-radius: 8px;
+padding: 40px 40px 40px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+text-align: left;
+background-color: #124E66;
+
+}
+
+.art-category2 h2 {
+font-size: 24px;
+color: #1A73E8;
+margin-bottom: 10px;
+}
+
+.art-category2 p {
+font-size: 16px;
+color: #666;
+}
+.art-category3 {
+background-color: #124E66;
+border-radius: 8px;
+padding: 40px 40px 40px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+text-align: left;
+}
+
+.art-category3 h2 {
+font-size: 24px;
+color: #1A73E8;
+margin-bottom: 10px;
+
+}
+
+.art-category3 p {
+font-size: 16px;
+color: #666;
+}
+.art-category4 {
+
+border-radius: 8px;
+padding: 40px 40px 40px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+text-align: left;
+background-color: #124E66;
+
+}
+
+.art-category4 h2 {
+font-size: 24px;
+color: #1A73E8;
+margin-bottom: 10px;
+}
+
+.art-category4 p {
+font-size: 16px;
+color: #666;
+}
+.art-category5 {
+
+border-radius: 8px;
+padding: 40px 40px 40px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+text-align: left;
+background-color: #124E66;
+
+}
+.art-category5 h2 {
+font-size: 24px;
+color: #1A73E8;
+margin-bottom: 10px;
+}
+.art-category5 p {
+font-size: 16px;
+color: #666;
+}
+/* --FOOTER */
+
+.footer {
+    background-color: #2E3944;
+    color: #b3b3b3;
+    margin-top: 0;
+    padding-top:100px;
+    padding: 40px 20px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: relative;
+    
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+}
+.footer-column h4,
+.brand-info h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Brand and Contact Info */
+.brand-info p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.app-links img {
+    width: 120px;
+    margin-right: 10px;
+}
+
+.contact {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+}
+
+/* ---------Image scroll bar */
+.course-container {
+    display: flex;
+    gap: 1rem;
+    padding: 10px;
+    margin-right: auto;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.course-card {
+    flex: 0 0 250px;
+    background: #79838e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    display:inline-flex
+}
+
+.course-card img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.course-title {
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #333;
+}
+
+.course-details {
+    margin-top: 0.5rem;
+    color: #666;
+}
